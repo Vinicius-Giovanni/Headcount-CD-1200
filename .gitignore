@@ -1,0 +1,19 @@
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+
+.venv
+__pycache__
+__init__
+
+# PyInstaller
+/dist
+/build
+*.spec
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Ambiente virtual
+.venv/
+venv/

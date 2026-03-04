@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "BI Headcount CD 1200"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "3c173cb2-225e-454f-8f9f-fe8613a6c890"
+  }
+}

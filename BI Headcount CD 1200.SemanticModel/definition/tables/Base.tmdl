@@ -1,0 +1,145 @@
+table Base
+	lineageTag: 6db57f4c-0e47-47b8-a55a-37554b685f1d
+
+	column 'Nome da Origem'
+		dataType: string
+		lineageTag: 032c3837-e3a2-4634-9be4-65c6a9c498ef
+		summarizeBy: none
+		sourceColumn: Nome da Origem
+
+		annotation SummarizationSetBy = Automatic
+
+	column matricula
+		dataType: int64
+		formatString: 0
+		lineageTag: fc3d6cae-7875-4b16-98ef-b74e66daad1e
+		summarizeBy: sum
+		sourceColumn: matricula
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_posicao
+		dataType: string
+		lineageTag: 6bd598d9-dc9e-434a-8f98-d78c813fb058
+		summarizeBy: none
+		sourceColumn: n_posicao
+
+		annotation SummarizationSetBy = Automatic
+
+	column nome
+		dataType: string
+		lineageTag: 34fe9fae-71be-487e-bc79-3ae52c9bf0d0
+		summarizeBy: none
+		sourceColumn: nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column cargo
+		dataType: string
+		lineageTag: 6481169a-e932-48f6-9d64-02995208d36f
+		summarizeBy: none
+		sourceColumn: cargo
+
+		annotation SummarizationSetBy = Automatic
+
+	column area
+		dataType: string
+		lineageTag: be24b6f0-ca04-44fb-8d1a-e72844179199
+		summarizeBy: none
+		sourceColumn: area
+
+		annotation SummarizationSetBy = Automatic
+
+	column turno
+		dataType: string
+		lineageTag: ad516bde-ecf4-4538-8602-c958fb7f8a6a
+		summarizeBy: none
+		sourceColumn: turno
+
+		annotation SummarizationSetBy = Automatic
+
+	column chefia
+		dataType: string
+		lineageTag: c9467fd6-3be4-4c44-b87e-2cbd34bd9238
+		summarizeBy: none
+		sourceColumn: chefia
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		lineageTag: e84b0b66-1b78-4732-ab90-475f23c18ccf
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column empresa
+		dataType: string
+		lineageTag: 41f237d8-3d5d-4c05-af5e-5aaf2ab34bfa
+		summarizeBy: none
+		sourceColumn: empresa
+
+		annotation SummarizationSetBy = Automatic
+
+	column status_vaga
+		dataType: string
+		lineageTag: a7d8be9b-aa9b-4ee5-961f-f56f88fc6fb6
+		summarizeBy: none
+		sourceColumn: status_vaga
+
+		annotation SummarizationSetBy = Automatic
+
+	column gerencia
+		dataType: string
+		lineageTag: 9683490c-65f3-41cb-ae55-e6656b60d5d4
+		summarizeBy: none
+		sourceColumn: gerencia
+
+		annotation SummarizationSetBy = Automatic
+
+	column coordenador
+		dataType: string
+		lineageTag: 6e11d16d-4f58-414e-9284-bb975245af0c
+		summarizeBy: none
+		sourceColumn: coordenador
+
+		annotation SummarizationSetBy = Automatic
+
+	column matricula_nome
+		dataType: string
+		lineageTag: 8c0a959b-75b0-48d1-b6cd-0e20c6fd6732
+		summarizeBy: none
+		sourceColumn: matricula_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Base = m
+		mode: import
+		source = ```
+				let
+				    Fonte = SharePoint.Contents("https://viavarejo.sharepoint.com/sites/grupo_de_dados_wave", [ApiVersion = 15]),
+				    #"Data Lakehouse" = Fonte{[Name="Data Lakehouse"]}[Content],
+				    Compartilhados = #"Data Lakehouse"{[Name="Compartilhados"]}[Content],
+				    #"Headcount CD 1200" = Compartilhados{[Name="Headcount CD 1200"]}[Content],
+				    #"Arquivos Ocultos Filtrados1" = Table.SelectRows(#"Headcount CD 1200", each [Attributes]?[Hidden]? <> true),
+				    #"Invocar Função Personalizada1" = Table.AddColumn(#"Arquivos Ocultos Filtrados1", "Transformar Arquivo", each #"Transformar Arquivo"([Content])),
+				    #"Colunas Renomeadas1" = Table.RenameColumns(#"Invocar Função Personalizada1", {"Name", "Nome da Origem"}),
+				    #"Outras Colunas Removidas1" = Table.SelectColumns(#"Colunas Renomeadas1", {"Nome da Origem", "Transformar Arquivo"}),
+				    #"Coluna de Tabela Expandida1" = Table.ExpandTableColumn(#"Outras Colunas Removidas1", "Transformar Arquivo", Table.ColumnNames(#"Transformar Arquivo"(#"Arquivo de Amostra"))),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Coluna de Tabela Expandida1",{{"Nome da Origem", type text}, {"matricula", Int64.Type}, {"n_posicao", type any}, {"nome", type text}, {"cargo", type text}, {"area", type text}, {"turno", type text}, {"chefia", type text}, {"status", type text}, {"empresa", type text}}),
+				    #"Personalização Adicionada" = Table.AddColumn(#"Tipo Alterado", "status_vaga", each if [n_posicao] <> null then "Vaga Disponível" else "Vaga Preenchida"),
+				    #"Personalização Adicionada1" = Table.AddColumn(#"Personalização Adicionada", "matricula_nome", each (if [matricula] = null and [empresa] = "Terceirizada" 
+				then "Terceirizado" 
+				else if [matricula] = null and [empresa] = "Grupo Casas Bahia" then "⚠️ Inserir Matrícula" 
+				else if [matricula] = null 
+				then " "
+				else Text.From([matricula])) & " - " & (if [nome] = null then " " else [nome]))
+				in
+				    #"Personalização Adicionada1"
+				```
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
