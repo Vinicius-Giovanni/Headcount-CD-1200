@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.65\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.65\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -103,30 +103,39 @@
       "displayName": "estrutura equipe",
       "displayOption": 1,
       "filters": "[]",
-      "height": 1000.00,
+      "height": 1920.00,
       "name": "917b2c239e97b1d320d7",
       "ordinal": 1,
       "visualContainers": [
         {
-          "config": "{\"name\":\"0168464060870e22d430\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":472,\"z\":7000,\"width\":632,\"height\":248.00000000000003,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Base.area\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Base.nome)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Base\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"nome\"}},\"Function\":5},\"Name\":\"CountNonNull(Base.nome)\",\"NativeReferenceName\":\"Contagem de nome\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"area\"},\"Name\":\"Base.area\",\"NativeReferenceName\":\"area\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"nome\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "config": "{\"name\":\"00e2cd10b030e0bad014\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":840,\"z\":7001,\"width\":640,\"height\":160,\"tabOrder\":7001}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.usuario\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"usuario\"},\"Name\":\"Medidas.usuario\",\"NativeReferenceName\":\"usuario\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
           "filters": "[]",
-          "height": 248.00,
-          "width": 632.00,
+          "height": 160.00,
+          "width": 640.00,
           "x": 640.00,
-          "y": 472.00,
-          "z": 7000.00
+          "y": 840.00,
+          "z": 7001.00
         },
         {
-          "config": "{\"name\":\"022926afee9dd021539d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":128,\"z\":6000,\"width\":392,\"height\":176,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(Base.nome)\"}],\"Category\":[{\"queryRef\":\"Base.turno\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Base\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"nome\"}},\"Function\":5},\"Name\":\"CountNonNull(Base.nome)\",\"NativeReferenceName\":\"Contagem de nome\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"turno\"},\"Name\":\"Base.turno\",\"NativeReferenceName\":\"turno\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"nome\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"0168464060870e22d430\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":576,\"z\":6000,\"width\":640,\"height\":240,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Base.area\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Base.nome)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Base\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"nome\"}},\"Function\":5},\"Name\":\"CountNonNull(Base.nome)\",\"NativeReferenceName\":\"Contagem de nome\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"area\"},\"Name\":\"Base.area\",\"NativeReferenceName\":\"area\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"nome\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 240.00,
+          "width": 640.00,
+          "x": 640.00,
+          "y": 576.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"022926afee9dd021539d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":128,\"z\":5000,\"width\":392,\"height\":176,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(Base.nome)\"}],\"Category\":[{\"queryRef\":\"Base.turno\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Base\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"nome\"}},\"Function\":5},\"Name\":\"CountNonNull(Base.nome)\",\"NativeReferenceName\":\"Contagem de nome\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"turno\"},\"Name\":\"Base.turno\",\"NativeReferenceName\":\"turno\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"nome\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 176.00,
           "width": 392.00,
           "x": 0.00,
           "y": 128.00,
-          "z": 6000.00
+          "z": 5000.00
         },
         {
-          "config": "{\"name\":\"76ed2bb2ee126eaed60c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":920,\"y\":16,\"z\":1000,\"width\":360,\"height\":120,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Base.coordenador\",\"active\":true},{\"queryRef\":\"Base.chefia\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Base\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"coordenador\"},\"Name\":\"Base.coordenador\",\"NativeReferenceName\":\"coordenador\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"chefia\"},\"Name\":\"Base.chefia\",\"NativeReferenceName\":\"chefia\"}]},\"expansionStates\":[{\"roles\":[\"Values\"],\"levels\":[{\"queryRefs\":[\"Base.coordenador\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Base\"}},\"Property\":\"coordenador\"}}],\"isPinned\":true},{\"queryRefs\":[\"Base.chefia\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "config": "{\"name\":\"76ed2bb2ee126eaed60c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":920,\"y\":16,\"z\":1000,\"width\":360,\"height\":120,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Base.coordenador\",\"active\":true},{\"queryRef\":\"Base.chefia\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Base\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"coordenador\"},\"Name\":\"Base.coordenador\",\"NativeReferenceName\":\"coordenador\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"chefia\"},\"Name\":\"Base.chefia\",\"NativeReferenceName\":\"chefia\"}]},\"expansionStates\":[{\"roles\":[\"Values\"],\"levels\":[{\"queryRefs\":[\"Base.coordenador\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Base\"}},\"Property\":\"coordenador\"}}],\"isPinned\":true},{\"queryRefs\":[\"Base.chefia\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Leonardo Delta'\"}}],\"isToggled\":true}]}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
           "filters": "[]",
           "height": 120.00,
           "width": 360.00,
@@ -135,52 +144,52 @@
           "z": 1000.00
         },
         {
-          "config": "{\"name\":\"88191919e7ac5be60a29\",\"layouts\":[{\"id\":0,\"position\":{\"x\":408,\"y\":128,\"z\":5000,\"width\":400,\"height\":176,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(Base.cargo)\"}],\"Category\":[{\"queryRef\":\"Base.status\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Base\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"cargo\"}},\"Function\":5},\"Name\":\"CountNonNull(Base.cargo)\",\"NativeReferenceName\":\"Contagem de cargo\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"status\"},\"Name\":\"Base.status\",\"NativeReferenceName\":\"status\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"cargo\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"88191919e7ac5be60a29\",\"layouts\":[{\"id\":0,\"position\":{\"x\":408,\"y\":128,\"z\":4000,\"width\":400,\"height\":176,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(Base.cargo)\"}],\"Category\":[{\"queryRef\":\"Base.status\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Base\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"cargo\"}},\"Function\":5},\"Name\":\"CountNonNull(Base.cargo)\",\"NativeReferenceName\":\"Contagem de cargo\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"status\"},\"Name\":\"Base.status\",\"NativeReferenceName\":\"status\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"cargo\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 176.00,
           "width": 400.00,
           "x": 408.00,
           "y": 128.00,
-          "z": 5000.00
-        },
-        {
-          "config": "{\"name\":\"8e0937d0356e95676a45\",\"layouts\":[{\"id\":0,\"position\":{\"x\":624,\"y\":320,\"z\":4000,\"width\":632,\"height\":248.00000000000003,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Base.cargo\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Base.nome)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Base\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"cargo\"},\"Name\":\"Base.cargo\",\"NativeReferenceName\":\"cargo\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"nome\"}},\"Function\":5},\"Name\":\"CountNonNull(Base.nome)\",\"NativeReferenceName\":\"Contagem de nome\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"nome\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
-          "filters": "[]",
-          "height": 248.00,
-          "width": 632.00,
-          "x": 624.00,
-          "y": 320.00,
           "z": 4000.00
         },
         {
-          "config": "{\"name\":\"9f6e2130d230962092a2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":808,\"y\":128,\"z\":3000,\"width\":472,\"height\":176,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Series\":[{\"queryRef\":\"Base.empresa\"}],\"Y\":[{\"queryRef\":\"CountNonNull(Base.nome)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Base\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"empresa\"},\"Name\":\"Base.empresa\",\"NativeReferenceName\":\"empresa\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"nome\"}},\"Function\":5},\"Name\":\"CountNonNull(Base.nome)\",\"NativeReferenceName\":\"Contagem de nome\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"nome\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"8e0937d0356e95676a45\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640,\"y\":320,\"z\":3000,\"width\":608,\"height\":256,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Base.cargo\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Base.nome)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Base\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"cargo\"},\"Name\":\"Base.cargo\",\"NativeReferenceName\":\"cargo\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"nome\"}},\"Function\":5},\"Name\":\"CountNonNull(Base.nome)\",\"NativeReferenceName\":\"Contagem de nome\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"nome\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
           "filters": "[]",
-          "height": 176.00,
-          "width": 472.00,
-          "x": 808.00,
-          "y": 128.00,
+          "height": 256.00,
+          "width": 608.00,
+          "x": 640.00,
+          "y": 320.00,
           "z": 3000.00
         },
         {
-          "config": "{\"name\":\"a5eb100d245004ba9957\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":56,\"z\":2000,\"width\":224,\"height\":216,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Base.status\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Base\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"status\"},\"Name\":\"Base.status\",\"NativeReferenceName\":\"status\"}]},\"drillFilterOtherVisuals\":true}}",
+          "config": "{\"name\":\"9f6e2130d230962092a2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":816,\"y\":128,\"z\":2000,\"width\":464,\"height\":176,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Series\":[{\"queryRef\":\"Base.empresa\"}],\"Y\":[{\"queryRef\":\"CountNonNull(Base.nome)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Base\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"empresa\"},\"Name\":\"Base.empresa\",\"NativeReferenceName\":\"empresa\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"nome\"}},\"Function\":5},\"Name\":\"CountNonNull(Base.nome)\",\"NativeReferenceName\":\"Contagem de nome\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"nome\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
-          "height": 216.00,
-          "width": 224.00,
-          "x": 0.00,
-          "y": 56.00,
+          "height": 176.00,
+          "width": 464.00,
+          "x": 816.00,
+          "y": 128.00,
           "z": 2000.00
         },
         {
-          "config": "{\"name\":\"f7be36564d211999e61d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":696,\"z\":0,\"width\":1152,\"height\":304,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Base.gerencia\",\"active\":true},{\"queryRef\":\"Base.coordenador\",\"active\":true},{\"queryRef\":\"Base.chefia\",\"active\":true},{\"queryRef\":\"Base.matricula_nome\"}],\"Values\":[{\"queryRef\":\"Min(Base.nome)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Base\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"gerencia\"},\"Name\":\"Base.gerencia\",\"NativeReferenceName\":\"gerencia\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"coordenador\"},\"Name\":\"Base.coordenador\",\"NativeReferenceName\":\"coordenador\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"chefia\"},\"Name\":\"Base.chefia\",\"NativeReferenceName\":\"chefia\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"nome\"}},\"Function\":5},\"Name\":\"Min(Base.nome)\",\"NativeReferenceName\":\"Contagem de nome\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"matricula_nome\"},\"Name\":\"Base.matricula_nome\",\"NativeReferenceName\":\"matricula_nome\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"nome\"}},\"Function\":5}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"Base.gerencia\"],\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Base\"}},\"Property\":\"gerencia\"}}],\"isPinned\":true},{\"queryRefs\":[\"Base.coordenador\"],\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Base\"}},\"Property\":\"coordenador\"}}],\"isPinned\":true},{\"queryRefs\":[\"Base.chefia\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Base\"}},\"Property\":\"chefia\"}}],\"isPinned\":true},{\"queryRefs\":[\"Base.matricula_nome\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"835.3770020725536D\"}}}},\"selector\":{\"metadata\":\"Base.gerencia\"}}]}}}",
-          "filters": "[{\"name\":\"93e1a1a0de02496e0eb4\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Base\"}},\"Property\":\"chefia\"}},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
-          "height": 304.00,
-          "width": 1152.00,
+          "config": "{\"name\":\"bb4c56d4da3d5e046501\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":648,\"z\":7000,\"width\":640,\"height\":352,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Base.matricula_nome\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Base\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"matricula_nome\"},\"Name\":\"Base.matricula_nome\",\"NativeReferenceName\":\"matricula_nome\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Base\"}},\"Property\":\"matricula_nome\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Base\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Contains\":{\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"matricula_nome\"}},\"Right\":{\"Literal\":{\"Value\":\"'Inserir'\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 352.00,
+          "width": 640.00,
           "x": 0.00,
-          "y": 696.00,
+          "y": 648.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"f7be36564d211999e61d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":320,\"z\":0,\"width\":640,\"height\":288,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Base.gerencia\",\"active\":true},{\"queryRef\":\"Base.coordenador\",\"active\":true},{\"queryRef\":\"Base.chefia\",\"active\":true},{\"queryRef\":\"Base.matricula_nome\"}],\"Values\":[{\"queryRef\":\"Min(Base.nome)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"Base\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"gerencia\"},\"Name\":\"Base.gerencia\",\"NativeReferenceName\":\"gerencia\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"coordenador\"},\"Name\":\"Base.coordenador\",\"NativeReferenceName\":\"coordenador\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"chefia\"},\"Name\":\"Base.chefia\",\"NativeReferenceName\":\"chefia\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"nome\"}},\"Function\":5},\"Name\":\"Min(Base.nome)\",\"NativeReferenceName\":\"Contagem de nome\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"matricula_nome\"},\"Name\":\"Base.matricula_nome\",\"NativeReferenceName\":\"matricula_nome\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"gerencia\"}}},{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"coordenador\"}}},{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"chefia\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"Base.gerencia\"],\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Base\"}},\"Property\":\"gerencia\"}}],\"isPinned\":true},{\"queryRefs\":[\"Base.coordenador\"],\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Base\"}},\"Property\":\"coordenador\"}}],\"isPinned\":true},{\"queryRefs\":[\"Base.chefia\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Base\"}},\"Property\":\"chefia\"}}],\"isPinned\":true},{\"queryRefs\":[\"Base.matricula_nome\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"650.3215633097177D\"}}}},\"selector\":{\"metadata\":\"Base.gerencia\"}}]}}}",
+          "filters": "[{\"name\":\"93e1a1a0de02496e0eb4\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Base\"}},\"Property\":\"chefia\"}},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 288.00,
+          "width": 640.00,
+          "x": 0.00,
+          "y": 320.00,
           "z": 0.00
         }
       ],
-      "width": 1280.00
+      "width": 3280.00
     },
     {
       "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'BI Headcount - Thainá.png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"BI_Headcount_-_Thain_24223326930022127.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]},\"type\":1}",

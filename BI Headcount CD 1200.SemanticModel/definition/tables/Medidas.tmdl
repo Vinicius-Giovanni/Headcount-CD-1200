@@ -1,11 +1,37 @@
 table Medidas
-	lineageTag: 79d5639c-bd11-4d19-a6c3-5827e6c4e9de
+	lineageTag: e47fd973-b05d-4535-9d1e-1ebf83ff8df2
+
+	measure usuario = ```
+			
+			
+			VAR UsuarioCompleto = USERPRINCIPALNAME()
+			VAR UsuarioSemDominio = LEFT(UsuarioCompleto, SEARCH("@", UsuarioCompleto, 1) - 1)
+			VAR UsuarioComEspacos = SUBSTITUTE(UsuarioSemDominio, ".", " ")
+			
+			VAR PalavrasSeparadas = SUBSTITUTE(UsuarioComEspacos, " ", "|")
+			VAR ListaPalavras = 
+			    ADDCOLUMNS(
+			        GENERATESERIES(1, PATHLENGTH(PalavrasSeparadas)),
+			        "Palavra", PATHITEM(PalavrasSeparadas, [Value])
+			    )
+			VAR NomeCapitalizado = 
+			    CONCATENATEX(
+			        ListaPalavras,
+			        UPPER(LEFT([Palavra], 1)) & LOWER(MID([Palavra], 2, LEN([Palavra]))),
+			        " "
+			    )
+			RETURN NomeCapitalizado
+			```
+		lineageTag: 466a4662-7e3d-403d-80f5-4fad6404b902
 
 	column 'Coluna 1'
 		dataType: string
-		lineageTag: b4b88d27-b1e1-474f-97aa-0ee47cf44b6d
+		isHidden
+		lineageTag: 447e2b4c-d5ef-4d82-ad4f-68851df1f7d2
 		summarizeBy: none
 		sourceColumn: Coluna 1
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
