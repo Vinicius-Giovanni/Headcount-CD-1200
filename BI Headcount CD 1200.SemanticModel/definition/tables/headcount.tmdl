@@ -1,0 +1,255 @@
+table headcount
+	lineageTag: adbb859f-0cb5-40ff-9f69-0e2a07bf34e7
+
+	column 'Nome da Origem'
+		dataType: string
+		lineageTag: 99c1e673-c5d2-445e-a476-8c31f151b5e7
+		summarizeBy: none
+		sourceColumn: Nome da Origem
+
+		annotation SummarizationSetBy = Automatic
+
+	column ANO_MES
+		dataType: int64
+		formatString: 0
+		lineageTag: 987abba8-cb24-4367-86c2-c0230e1567ba
+		summarizeBy: sum
+		sourceColumn: ANO_MES
+
+		annotation SummarizationSetBy = Automatic
+
+	column COD_EMPRESA
+		dataType: int64
+		formatString: 0
+		lineageTag: bced807f-d0ed-4e92-a1a7-d424ae52e1c7
+		summarizeBy: sum
+		sourceColumn: COD_EMPRESA
+
+		annotation SummarizationSetBy = Automatic
+
+	column MATRICULA
+		dataType: int64
+		formatString: 0
+		lineageTag: 3478029d-9762-4c51-9e93-19cda6ba1007
+		summarizeBy: sum
+		sourceColumn: MATRICULA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOME
+		dataType: string
+		lineageTag: 41e6930c-cb29-4607-9b74-4f494274d6c7
+		summarizeBy: none
+		sourceColumn: NOME
+
+		annotation SummarizationSetBy = Automatic
+
+	column STATUS_COLABORADOR
+		dataType: string
+		lineageTag: eebb4d77-168e-4e7e-8cd1-5e575ff57f41
+		summarizeBy: none
+		sourceColumn: STATUS_COLABORADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATA_ADMISSAO
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 411d6f24-4e02-4398-8e83-90fc206917df
+		summarizeBy: none
+		sourceColumn: DATA_ADMISSAO
+
+		variation Variation
+			isDefault
+			relationship: 31bab174-e769-452a-a701-c245179994de
+			defaultHierarchy: LocalDateTable_e9f1d4eb-1823-469b-8b10-8df9c70e7407.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column EMPRESA_GESTOR
+		dataType: int64
+		formatString: 0
+		lineageTag: 275f03cd-9a23-4700-ad81-022ee2320c0e
+		summarizeBy: sum
+		sourceColumn: EMPRESA_GESTOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column MATRICULA_GESTOR
+		dataType: int64
+		formatString: 0
+		lineageTag: 5e0b86e3-dd6c-4649-8279-a009433baa81
+		summarizeBy: sum
+		sourceColumn: MATRICULA_GESTOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOME_GESTOR
+		dataType: string
+		lineageTag: 962523d2-0d32-4e42-ba23-ee3150678f3f
+		summarizeBy: none
+		sourceColumn: NOME_GESTOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column COORDENADOR
+		dataType: string
+		lineageTag: 115024d9-d5b1-480f-ad20-6259c124fa61
+		summarizeBy: none
+		sourceColumn: COORDENADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column COD_FUNCAO_ATUAL
+		dataType: int64
+		formatString: 0
+		lineageTag: e70fa16d-1a5c-4939-a666-74c23e651156
+		summarizeBy: sum
+		sourceColumn: COD_FUNCAO_ATUAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column DESC_FUNCAO_ATUAL
+		dataType: string
+		lineageTag: ec2a9abf-ecf9-4cb1-bda6-30256a47b32e
+		summarizeBy: none
+		sourceColumn: DESC_FUNCAO_ATUAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column AGRUP_CARGOS_FUNCOES
+		dataType: string
+		lineageTag: b0173d3a-30c0-4d56-ab3d-e0d64ba06844
+		summarizeBy: none
+		sourceColumn: AGRUP_CARGOS_FUNCOES
+
+		annotation SummarizationSetBy = Automatic
+
+	column COD_ESTABELECIMENTO
+		dataType: int64
+		formatString: 0
+		lineageTag: 8fe29f30-5516-4ebb-b2ea-15b68affd626
+		summarizeBy: sum
+		sourceColumn: COD_ESTABELECIMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column COD_CCUSTO_GERENCIAL
+		dataType: int64
+		formatString: 0
+		lineageTag: b5db9611-4b21-473f-9907-c49dde056f19
+		summarizeBy: sum
+		sourceColumn: COD_CCUSTO_GERENCIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column ESTRUTURA
+		dataType: string
+		lineageTag: 2be11878-0cf5-4c9f-a101-9fb274cd2f84
+		summarizeBy: none
+		sourceColumn: ESTRUTURA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NIVEL1
+		dataType: string
+		lineageTag: de57a3ea-8019-4ac5-b481-4c5033fc6221
+		summarizeBy: none
+		sourceColumn: NIVEL1
+
+		annotation SummarizationSetBy = Automatic
+
+	column NIVEL2
+		dataType: string
+		lineageTag: 92219495-f5e3-428d-9e13-01b2b7101d27
+		summarizeBy: none
+		sourceColumn: NIVEL2
+
+		annotation SummarizationSetBy = Automatic
+
+	column NIVEL3
+		dataType: string
+		lineageTag: 07096843-4afc-4d53-84dc-25b0d291f908
+		summarizeBy: none
+		sourceColumn: NIVEL3
+
+		annotation SummarizationSetBy = Automatic
+
+	column NIVEL4
+		dataType: string
+		lineageTag: 8a0d55a4-b03f-406d-b90b-946185ac26ac
+		summarizeBy: none
+		sourceColumn: NIVEL4
+
+		annotation SummarizationSetBy = Automatic
+
+	column NIVEL5
+		dataType: string
+		lineageTag: 2538c906-f44c-4302-a23e-558ce539bd19
+		summarizeBy: none
+		sourceColumn: NIVEL5
+
+		annotation SummarizationSetBy = Automatic
+
+	column DESC_TIPO_DEFICIENCIA
+		dataType: string
+		lineageTag: 2ebc87c6-5c8f-4658-afbc-9d79ad292862
+		summarizeBy: none
+		sourceColumn: DESC_TIPO_DEFICIENCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column EMPRESA
+		dataType: string
+		lineageTag: 8f53e5ba-3174-4638-99c4-13b8bab391e6
+		summarizeBy: none
+		sourceColumn: EMPRESA
+
+		annotation SummarizationSetBy = Automatic
+
+	column TURNO
+		dataType: string
+		lineageTag: e3fa5eaf-da02-4bec-add7-b35f69cb069a
+		summarizeBy: none
+		sourceColumn: TURNO
+
+		annotation SummarizationSetBy = Automatic
+
+	column matricula_nome
+		dataType: string
+		lineageTag: 48056773-31c9-4c14-9901-c3bd054c07cf
+		summarizeBy: none
+		sourceColumn: matricula_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	partition headcount = m
+		mode: import
+		source = ```
+				let
+				    Fonte = SharePoint.Contents("https://viavarejo.sharepoint.com/sites/grupo_de_dados_wave", [ApiVersion = 15]),
+				    #"Data Lakehouse" = Fonte{[Name="Data Lakehouse"]}[Content],
+				    Compartilhados = #"Data Lakehouse"{[Name="Compartilhados"]}[Content],
+				    #"Headcount CD 1200" = Compartilhados{[Name="Headcount CD 1200"]}[Content],
+				    #"Arquivos Ocultos Filtrados1" = Table.SelectRows(#"Headcount CD 1200", each [Attributes]?[Hidden]? <> true),
+				    #"Invocar Função Personalizada1" = Table.AddColumn(#"Arquivos Ocultos Filtrados1", "Transformar Arquivo (2)", each #"Transformar Arquivo (2)"([Content])),
+				    #"Colunas Renomeadas1" = Table.RenameColumns(#"Invocar Função Personalizada1", {"Name", "Nome da Origem"}),
+				    #"Outras Colunas Removidas1" = Table.SelectColumns(#"Colunas Renomeadas1", {"Nome da Origem", "Transformar Arquivo (2)"}),
+				    #"Coluna de Tabela Expandida1" = Table.ExpandTableColumn(#"Outras Colunas Removidas1", "Transformar Arquivo (2)", Table.ColumnNames(#"Transformar Arquivo (2)"(#"Arquivo de Amostra (2)"))),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Coluna de Tabela Expandida1",{{"Nome da Origem", type text}, {"ANO_MES", Int64.Type}, {"COD_EMPRESA", Int64.Type}, {"MATRICULA", Int64.Type}, {"NOME", type text}, {"STATUS_COLABORADOR", type text}, {"DATA_ADMISSAO", type date}, {"EMPRESA_GESTOR", Int64.Type}, {"MATRICULA_GESTOR", Int64.Type}, {"NOME_GESTOR", type text}, {"COORDENADOR", type text}, {"COD_FUNCAO_ATUAL", Int64.Type}, {"DESC_FUNCAO_ATUAL", type text}, {"AGRUP_CARGOS_FUNCOES", type text}, {"COD_ESTABELECIMENTO", Int64.Type}, {"COD_CCUSTO_GERENCIAL", Int64.Type}, {"ESTRUTURA", type text}, {"NIVEL1", type text}, {"NIVEL2", type text}, {"NIVEL3", type text}, {"NIVEL4", type text}, {"NIVEL5", type text}, {"DESC_TIPO_DEFICIENCIA", type text}, {"EMPRESA", type text}, {"TURNO", type text}}),
+				    #"Personalização Adicionada" = Table.AddColumn(#"Tipo Alterado", "matricula_nome", each if [MATRICULA] = null and [EMPRESA] = "Terceirizada" 
+				then "Terceirizado" 
+				else if [MATRICULA] = null and [EMPRESA] = "Grupo Casas Bahia" then "⚠️ Inserir Matrícula" 
+				else if [MATRICULA] = null 
+				then " "
+				else Text.From([MATRICULA]) & " - " & (if [NOME] = null then " " else [NOME]))
+				in
+				    #"Personalização Adicionada"
+				```
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

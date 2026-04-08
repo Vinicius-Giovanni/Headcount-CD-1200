@@ -1,0 +1,5 @@
+relationship 31bab174-e769-452a-a701-c245179994de
+	joinOnDateBehavior: datePartOnly
+	fromColumn: headcount.DATA_ADMISSAO
+	toColumn: LocalDateTable_e9f1d4eb-1823-469b-8b10-8df9c70e7407.Date
+
