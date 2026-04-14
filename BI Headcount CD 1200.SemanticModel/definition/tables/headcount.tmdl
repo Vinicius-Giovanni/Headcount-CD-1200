@@ -239,9 +239,9 @@ table headcount
 				    #"Outras Colunas Removidas1" = Table.SelectColumns(#"Colunas Renomeadas1", {"Nome da Origem", "Transformar Arquivo (2)"}),
 				    #"Coluna de Tabela Expandida1" = Table.ExpandTableColumn(#"Outras Colunas Removidas1", "Transformar Arquivo (2)", Table.ColumnNames(#"Transformar Arquivo (2)"(#"Arquivo de Amostra (2)"))),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Coluna de Tabela Expandida1",{{"Nome da Origem", type text}, {"ANO_MES", Int64.Type}, {"COD_EMPRESA", Int64.Type}, {"MATRICULA", Int64.Type}, {"NOME", type text}, {"STATUS_COLABORADOR", type text}, {"DATA_ADMISSAO", type date}, {"EMPRESA_GESTOR", Int64.Type}, {"MATRICULA_GESTOR", Int64.Type}, {"NOME_GESTOR", type text}, {"COORDENADOR", type text}, {"COD_FUNCAO_ATUAL", Int64.Type}, {"DESC_FUNCAO_ATUAL", type text}, {"AGRUP_CARGOS_FUNCOES", type text}, {"COD_ESTABELECIMENTO", Int64.Type}, {"COD_CCUSTO_GERENCIAL", Int64.Type}, {"ESTRUTURA", type text}, {"NIVEL1", type text}, {"NIVEL2", type text}, {"NIVEL3", type text}, {"NIVEL4", type text}, {"NIVEL5", type text}, {"DESC_TIPO_DEFICIENCIA", type text}, {"EMPRESA", type text}, {"TURNO", type text}}),
-				    #"Personalização Adicionada" = Table.AddColumn(#"Tipo Alterado", "matricula_nome", each if [MATRICULA] = null and [EMPRESA] = "Terceirizada" 
+				    #"Personalização Adicionada" = Table.AddColumn(#"Tipo Alterado", "matricula_nome", each if [MATRICULA] = null and [EMPRESA] = "TERCEIRIZADA" 
 				then "Terceirizado" 
-				else if [MATRICULA] = null and [EMPRESA] = "Grupo Casas Bahia" then "⚠️ Inserir Matrícula" 
+				else if [MATRICULA] = null and [EMPRESA] = "GRUPO CASAS BAHIA" then "⚠️ Inserir Matrícula" 
 				else if [MATRICULA] = null 
 				then " "
 				else Text.From([MATRICULA]) & " - " & (if [NOME] = null then " " else [NOME]))

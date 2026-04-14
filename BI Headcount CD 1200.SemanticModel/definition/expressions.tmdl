@@ -34,12 +34,12 @@ expression 'Arquivo de Amostra (2)' =
 
 expression 'Transformar Arquivo (2)' =
 		let
-		    Fonte = (Parâmetro2) => let
-		        Fonte = Excel.Workbook(Parâmetro2, null, true),
-		        Planilha1_Sheet = Fonte{[Item="Planilha1",Kind="Sheet"]}[Data],
-		        #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Planilha1_Sheet, [PromoteAllScalars=true])
-		    in
-		        #"Cabeçalhos Promovidos"
+		    Fonte = (Parâmetro2 as binary) => let
+		    Fonte = Excel.Workbook(Parâmetro2, null, true),
+		    Planilha1_Sheet = Fonte{[Item="Planilha1",Kind="Sheet"]}[Data],
+		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Planilha1_Sheet, [PromoteAllScalars=true])
+		in
+		    #"Cabeçalhos Promovidos"
 		in
 		    Fonte
 	mAttributes: [ FunctionQueryBinding = "{""exemplarFormulaName"":""Transformar o Arquivo de Exemplo (2)""}" ]
