@@ -2,8 +2,2240 @@ cultureInfo pt-BR
 
 	linguisticMetadata =
 			{
-			  "Version": "1.0.0",
-			  "Language": "en-US"
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.coluna_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Coluna 1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "coluna 1": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.usuario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "usuario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "usuario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "base de dado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "base_de_dados": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.cod_empresa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "ConceptualProperty": "COD_EMPRESA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cod empresa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "COD_EMPRESA": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.matricula": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "ConceptualProperty": "MATRICULA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "matricula": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.nome": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "ConceptualProperty": "NOME"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Colaborador": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.status_colaborador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "ConceptualProperty": "STATUS_COLABORADOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "status colaborador": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "STATUS_COLABORADOR": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "category colaborador": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "importance colaborador": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "prestige colaborador": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "prominence colaborador": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "condition colaborador": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "class colaborador": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "grade colaborador": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "level colaborador": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "position colaborador": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "rank colaborador": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Status": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.data_admissao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "ConceptualProperty": "DATA_ADMISSAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data admissao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DATA_ADMISSAO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information admissao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact admissao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info admissao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic admissao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document admissao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure admissao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record admissao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "base_de_dado.data_admissao.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "VariationSource": "DATA_ADMISSAO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.data_admissao.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "VariationSource": "DATA_ADMISSAO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data admissao ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information admissao ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact admissao ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info admissao ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic admissao ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document admissao ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure admissao ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record admissao ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.data_admissao.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "VariationSource": "DATA_ADMISSAO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data admissao trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information admissao trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact admissao trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info admissao trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic admissao trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document admissao trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure admissao trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record admissao trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.data_admissao.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "VariationSource": "DATA_ADMISSAO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data admissao mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information admissao mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact admissao mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info admissao mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic admissao mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document admissao mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure admissao mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record admissao mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.data_admissao.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "VariationSource": "DATA_ADMISSAO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data admissao dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information admissao dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact admissao dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info admissao dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic admissao dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document admissao dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure admissao dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record admissao dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.nome_gestor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "ConceptualProperty": "NOME_GESTOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome gestor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NOME_GESTOR": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Gestão": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.pcd": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "ConceptualProperty": "PCD"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pcd": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.funcao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "ConceptualProperty": "FUNCAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "funcao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Cargo": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.cc": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "ConceptualProperty": "CC"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cc": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.desc_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "ConceptualProperty": "DESC1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "desc 1": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DESC1": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "description 1": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.desc_2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "ConceptualProperty": "DESC2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "desc 2": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DESC2": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "description 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.desc_3": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "ConceptualProperty": "DESC3"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "desc 3": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DESC3": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "description 3": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.desc_4": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "ConceptualProperty": "DESC4"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "desc 4": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DESC4": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "description 4": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "Setor": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.empresa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "ConceptualProperty": "EMPRESA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "empresa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.turno": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "ConceptualProperty": "TURNO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "turno": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.entrada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "ConceptualProperty": "ENTRADA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "entrada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Entrada - Coordenação - Gestão - Colaborador": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.saida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "ConceptualProperty": "SAIDA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "saida": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Saída - Coordenação - Gestão - Colaborador": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.nome_coordenador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "ConceptualProperty": "NOME_COORDENADOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome coordenador": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NOME_COORDENADOR": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Coordenação - Supervisão - Colaborador": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "base_de_dado.posicao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "base_de_dados",
+			          "ConceptualProperty": "POSICAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "posicao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "base_de_dado_data_admissao_mê_has_base_de_dado_data_admissao_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado.data_admissao.mê": {
+			          "Target": {
+			            "Entity": "base_de_dado.data_admissao.mê"
+			          }
+			        },
+			        "base_de_dado.data_admissao.dia": {
+			          "Target": {
+			            "Entity": "base_de_dado.data_admissao.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado.data_admissao.mê"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.data_admissao.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado.data_admissao.dia"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.data_admissao.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "base_de_dado.data_admissao.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "base_de_dado.data_admissao.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê"
+			        }
+			      ]
+			    },
+			    "base_de_dado_data_admissao_trimestre_has_base_de_dado_data_admissao_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado.data_admissao.trimestre": {
+			          "Target": {
+			            "Entity": "base_de_dado.data_admissao.trimestre"
+			          }
+			        },
+			        "base_de_dado.data_admissao.mê": {
+			          "Target": {
+			            "Entity": "base_de_dado.data_admissao.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado.data_admissao.trimestre"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.data_admissao.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado.data_admissao.mê"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.data_admissao.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "base_de_dado.data_admissao.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "base_de_dado.data_admissao.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres"
+			        }
+			      ]
+			    },
+			    "base_de_dado_data_admissao_ano_has_base_de_dado_data_admissao_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado.data_admissao.ano": {
+			          "Target": {
+			            "Entity": "base_de_dado.data_admissao.ano"
+			          }
+			        },
+			        "base_de_dado.data_admissao.trimestre": {
+			          "Target": {
+			            "Entity": "base_de_dado.data_admissao.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado.data_admissao.ano"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.data_admissao.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado.data_admissao.trimestre"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.data_admissao.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "base_de_dado.data_admissao.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "base_de_dado.data_admissao.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos"
+			        }
+			      ]
+			    },
+			    "base_de_dado_data_admissao_hierarquia_de_data_has_base_de_dado_data_admissao_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado.data_admissao.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "base_de_dado.data_admissao.hierarquia_de_data"
+			          }
+			        },
+			        "base_de_dado.data_admissao.dia": {
+			          "Target": {
+			            "Entity": "base_de_dado.data_admissao.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado.data_admissao.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.data_admissao.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias"
+			        }
+			      ]
+			    },
+			    "base_de_dado_data_admissao_hierarquia_de_data_has_base_de_dado_data_admissao_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado.data_admissao.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "base_de_dado.data_admissao.hierarquia_de_data"
+			          }
+			        },
+			        "base_de_dado.data_admissao.mê": {
+			          "Target": {
+			            "Entity": "base_de_dado.data_admissao.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado.data_admissao.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.data_admissao.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê"
+			        }
+			      ]
+			    },
+			    "base_de_dado_data_admissao_hierarquia_de_data_has_base_de_dado_data_admissao_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado.data_admissao.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "base_de_dado.data_admissao.hierarquia_de_data"
+			          }
+			        },
+			        "base_de_dado.data_admissao.trimestre": {
+			          "Target": {
+			            "Entity": "base_de_dado.data_admissao.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado.data_admissao.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.data_admissao.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres"
+			        }
+			      ]
+			    },
+			    "base_de_dado_data_admissao_hierarquia_de_data_has_base_de_dado_data_admissao_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado.data_admissao.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "base_de_dado.data_admissao.hierarquia_de_data"
+			          }
+			        },
+			        "base_de_dado.data_admissao.ano": {
+			          "Target": {
+			            "Entity": "base_de_dado.data_admissao.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado.data_admissao.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.data_admissao.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos"
+			        }
+			      ]
+			    },
+			    "base_de_dado_data_admissao_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado.data_admissao": {
+			          "Target": {
+			            "Entity": "base_de_dado.data_admissao"
+			          }
+			        },
+			        "base_de_dado.data_admissao.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "base_de_dado.data_admissao.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado.data_admissao"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.data_admissao.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_admissaos_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "base_de_dado_has_posicao": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado": {
+			          "Target": {
+			            "Entity": "base_de_dado"
+			          }
+			        },
+			        "base_de_dado.posicao": {
+			          "Target": {
+			            "Entity": "base_de_dado.posicao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.posicao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "base_de_dadoes_have_posicaos"
+			        }
+			      ]
+			    },
+			    "base_de_dado_has_nome_coordenador": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado": {
+			          "Target": {
+			            "Entity": "base_de_dado"
+			          }
+			        },
+			        "base_de_dado.nome_coordenador": {
+			          "Target": {
+			            "Entity": "base_de_dado.nome_coordenador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.nome_coordenador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "base_de_dadoes_have_nome_coordenadors"
+			        }
+			      ]
+			    },
+			    "base_de_dado_has_saida": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado": {
+			          "Target": {
+			            "Entity": "base_de_dado"
+			          }
+			        },
+			        "base_de_dado.saida": {
+			          "Target": {
+			            "Entity": "base_de_dado.saida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.saida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "base_de_dadoes_have_saidas"
+			        }
+			      ]
+			    },
+			    "base_de_dado_has_entrada": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado": {
+			          "Target": {
+			            "Entity": "base_de_dado"
+			          }
+			        },
+			        "base_de_dado.entrada": {
+			          "Target": {
+			            "Entity": "base_de_dado.entrada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.entrada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "base_de_dadoes_have_entradas"
+			        }
+			      ]
+			    },
+			    "base_de_dado_has_turno": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado": {
+			          "Target": {
+			            "Entity": "base_de_dado"
+			          }
+			        },
+			        "base_de_dado.turno": {
+			          "Target": {
+			            "Entity": "base_de_dado.turno"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.turno"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "base_de_dadoes_have_turnos"
+			        }
+			      ]
+			    },
+			    "base_de_dado_has_empresa": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado": {
+			          "Target": {
+			            "Entity": "base_de_dado"
+			          }
+			        },
+			        "base_de_dado.empresa": {
+			          "Target": {
+			            "Entity": "base_de_dado.empresa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.empresa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "base_de_dadoes_have_empresas"
+			        }
+			      ]
+			    },
+			    "base_de_dado_has_desc_4": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado": {
+			          "Target": {
+			            "Entity": "base_de_dado"
+			          }
+			        },
+			        "base_de_dado.desc_4": {
+			          "Target": {
+			            "Entity": "base_de_dado.desc_4"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.desc_4"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "base_de_dadoes_have_desc_4"
+			        }
+			      ]
+			    },
+			    "base_de_dado_has_desc_3": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado": {
+			          "Target": {
+			            "Entity": "base_de_dado"
+			          }
+			        },
+			        "base_de_dado.desc_3": {
+			          "Target": {
+			            "Entity": "base_de_dado.desc_3"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.desc_3"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "base_de_dadoes_have_desc_3"
+			        }
+			      ]
+			    },
+			    "base_de_dado_has_desc_2": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado": {
+			          "Target": {
+			            "Entity": "base_de_dado"
+			          }
+			        },
+			        "base_de_dado.desc_2": {
+			          "Target": {
+			            "Entity": "base_de_dado.desc_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.desc_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "base_de_dadoes_have_desc_2"
+			        }
+			      ]
+			    },
+			    "base_de_dado_has_desc_1": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado": {
+			          "Target": {
+			            "Entity": "base_de_dado"
+			          }
+			        },
+			        "base_de_dado.desc_1": {
+			          "Target": {
+			            "Entity": "base_de_dado.desc_1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.desc_1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "base_de_dadoes_have_desc_1"
+			        }
+			      ]
+			    },
+			    "base_de_dado_has_cc": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado": {
+			          "Target": {
+			            "Entity": "base_de_dado"
+			          }
+			        },
+			        "base_de_dado.cc": {
+			          "Target": {
+			            "Entity": "base_de_dado.cc"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.cc"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "base_de_dadoes_have_cc"
+			        }
+			      ]
+			    },
+			    "base_de_dado_has_funcao": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado": {
+			          "Target": {
+			            "Entity": "base_de_dado"
+			          }
+			        },
+			        "base_de_dado.funcao": {
+			          "Target": {
+			            "Entity": "base_de_dado.funcao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.funcao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "base_de_dadoes_have_funcaos"
+			        }
+			      ]
+			    },
+			    "base_de_dado_has_pcd": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado": {
+			          "Target": {
+			            "Entity": "base_de_dado"
+			          }
+			        },
+			        "base_de_dado.pcd": {
+			          "Target": {
+			            "Entity": "base_de_dado.pcd"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.pcd"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "base_de_dadoes_have_pcds"
+			        }
+			      ]
+			    },
+			    "base_de_dado_has_nome_gestor": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado": {
+			          "Target": {
+			            "Entity": "base_de_dado"
+			          }
+			        },
+			        "base_de_dado.nome_gestor": {
+			          "Target": {
+			            "Entity": "base_de_dado.nome_gestor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.nome_gestor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "base_de_dadoes_have_nome_gestors"
+			        }
+			      ]
+			    },
+			    "base_de_dado_has_data_admissao": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado": {
+			          "Target": {
+			            "Entity": "base_de_dado"
+			          }
+			        },
+			        "base_de_dado.data_admissao": {
+			          "Target": {
+			            "Entity": "base_de_dado.data_admissao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.data_admissao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "base_de_dadoes_have_data_admissaos"
+			        }
+			      ]
+			    },
+			    "base_de_dado_has_status_colaborador": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado": {
+			          "Target": {
+			            "Entity": "base_de_dado"
+			          }
+			        },
+			        "base_de_dado.status_colaborador": {
+			          "Target": {
+			            "Entity": "base_de_dado.status_colaborador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.status_colaborador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "base_de_dadoes_have_status_colaboradors"
+			        }
+			      ]
+			    },
+			    "base_de_dado_has_nome": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado": {
+			          "Target": {
+			            "Entity": "base_de_dado"
+			          }
+			        },
+			        "base_de_dado.nome": {
+			          "Target": {
+			            "Entity": "base_de_dado.nome"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.nome"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "base_de_dadoes_have_nome"
+			        }
+			      ]
+			    },
+			    "base_de_dado_has_matricula": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado": {
+			          "Target": {
+			            "Entity": "base_de_dado"
+			          }
+			        },
+			        "base_de_dado.matricula": {
+			          "Target": {
+			            "Entity": "base_de_dado.matricula"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.matricula"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "base_de_dadoes_have_matriculas"
+			        }
+			      ]
+			    },
+			    "base_de_dado_has_cod_empresa": {
+			      "Binding": {
+			        "ConceptualEntity": "base_de_dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "base_de_dado": {
+			          "Target": {
+			            "Entity": "base_de_dado"
+			          }
+			        },
+			        "base_de_dado.cod_empresa": {
+			          "Target": {
+			            "Entity": "base_de_dado.cod_empresa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "base_de_dado"
+			            },
+			            "Object": {
+			              "Role": "base_de_dado.cod_empresa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "base_de_dadoes_have_cod_empresas"
+			        }
+			      ]
+			    },
+			    "medida_has_usuario": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.usuario": {
+			          "Target": {
+			            "Entity": "medida.usuario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.usuario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_usuario"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
 			}
 		contentType: json
 

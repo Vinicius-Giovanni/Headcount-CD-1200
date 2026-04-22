@@ -6,15 +6,15 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-queryGroup 'Transformar Arquivo de headcount'
+queryGroup 'Transformar Arquivo de headcount (2)'
 
 	annotation PBI_QueryGroupOrder = 2
 
-queryGroup 'Transformar Arquivo de headcount\Consultas Auxiliares'
+queryGroup 'Transformar Arquivo de headcount (2)\Consultas Auxiliares'
 
 	annotation PBI_QueryGroupOrder = 0
 
-annotation PBI_QueryOrder = ["Medidas","headcount","Parâmetro2","Transformar o Arquivo de Exemplo (2)","Arquivo de Amostra (2)","Transformar Arquivo (2)"]
+annotation PBI_QueryOrder = ["Medidas","base_de_dados","Parâmetro1","Transformar o Arquivo de Exemplo","Arquivo de Amostra","Transformar Arquivo"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
@@ -23,9 +23,9 @@ annotation PBIDesktopVersion = 2.144.679.0 (25.06)+ef40146207b86a826d1c72a7727a7
 annotation PBI_ProTooling = ["DevMode"]
 
 ref table Medidas
-ref table headcount
-ref table DateTableTemplate_4180dbba-a7bf-4917-bab4-915e1662fa5b
-ref table LocalDateTable_e9f1d4eb-1823-469b-8b10-8df9c70e7407
+ref table base_de_dados
+ref table DateTableTemplate_7522d135-59fa-4511-bf0c-16e8b16547cd
+ref table LocalDateTable_d21be7de-4960-461a-9da5-0abe28f875a7
 
 ref cultureInfo pt-BR
 

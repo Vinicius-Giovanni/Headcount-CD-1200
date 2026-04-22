@@ -1,5 +1,5 @@
-relationship 31bab174-e769-452a-a701-c245179994de
+relationship de0085b6-33f4-419e-b2b2-b8c6883dac31
 	joinOnDateBehavior: datePartOnly
-	fromColumn: headcount.DATA_ADMISSAO
-	toColumn: LocalDateTable_e9f1d4eb-1823-469b-8b10-8df9c70e7407.Date
+	fromColumn: base_de_dados.DATA_ADMISSAO
+	toColumn: LocalDateTable_d21be7de-4960-461a-9da5-0abe28f875a7.Date
 

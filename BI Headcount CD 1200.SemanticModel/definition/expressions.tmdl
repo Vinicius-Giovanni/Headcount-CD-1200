@@ -1,22 +1,21 @@
-expression Parâmetro2 = #"Arquivo de Amostra (2)" meta [IsParameterQuery=true, BinaryIdentifier=#"Arquivo de Amostra (2)", Type="Binary", IsParameterQueryRequired=true]
-	lineageTag: d1c7e9a2-9f4b-4ec2-a63d-111b2781d9a5
-	queryGroup: 'Transformar Arquivo de headcount\Consultas Auxiliares'
+expression Parâmetro1 = #"Arquivo de Amostra" meta [IsParameterQuery=true, BinaryIdentifier=#"Arquivo de Amostra", Type="Binary", IsParameterQueryRequired=true]
+	lineageTag: bea81432-0346-4bfd-a112-3f2831badd72
+	queryGroup: 'Transformar Arquivo de headcount (2)\Consultas Auxiliares'
 
 	annotation PBI_ResultType = Binary
 
-expression 'Transformar o Arquivo de Exemplo (2)' =
+expression 'Transformar o Arquivo de Exemplo' =
 		let
-		    Fonte = Excel.Workbook(Parâmetro2, null, true),
-		    Planilha1_Sheet = Fonte{[Item="Planilha1",Kind="Sheet"]}[Data],
-		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Planilha1_Sheet, [PromoteAllScalars=true])
+		    Fonte = Excel.Workbook(Parâmetro1, null, true),
+		    Tabela1_Table = Fonte{[Item="Tabela1",Kind="Table"]}[Data]
 		in
-		    #"Cabeçalhos Promovidos"
-	lineageTag: 83cf76bd-822e-497f-aa89-7e39d821a941
-	queryGroup: 'Transformar Arquivo de headcount'
+		    Tabela1_Table
+	lineageTag: 82ca699d-ded0-4cec-a5df-ece63a1fd24c
+	queryGroup: 'Transformar Arquivo de headcount (2)'
 
 	annotation PBI_ResultType = Table
 
-expression 'Arquivo de Amostra (2)' =
+expression 'Arquivo de Amostra' =
 		let
 		    Fonte = SharePoint.Contents("https://viavarejo.sharepoint.com/sites/grupo_de_dados_wave", [ApiVersion = 15]),
 		    #"Data Lakehouse" = Fonte{[Name="Data Lakehouse"]}[Content],
@@ -25,26 +24,25 @@ expression 'Arquivo de Amostra (2)' =
 		    Navegação1 = #"Headcount CD 1200"{0}[Content]
 		in
 		    Navegação1
-	lineageTag: 347dcc0a-2531-4572-b009-1671baf023f8
-	queryGroup: 'Transformar Arquivo de headcount\Consultas Auxiliares'
+	lineageTag: 8f333ac2-a650-4322-9c52-00028dc9669f
+	queryGroup: 'Transformar Arquivo de headcount (2)\Consultas Auxiliares'
 
 	annotation PBI_NavigationStepName = Navegação
 
 	annotation PBI_ResultType = Binary
 
-expression 'Transformar Arquivo (2)' =
+expression 'Transformar Arquivo' =
 		let
-		    Fonte = (Parâmetro2 as binary) => let
-		    Fonte = Excel.Workbook(Parâmetro2, null, true),
-		    Planilha1_Sheet = Fonte{[Item="Planilha1",Kind="Sheet"]}[Data],
-		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Planilha1_Sheet, [PromoteAllScalars=true])
+		    Fonte = (Parâmetro1 as binary) => let
+		    Fonte = Excel.Workbook(Parâmetro1, null, true),
+		    Tabela1_Table = Fonte{[Item="Tabela1",Kind="Table"]}[Data]
 		in
-		    #"Cabeçalhos Promovidos"
+		    Tabela1_Table
 		in
 		    Fonte
-	mAttributes: [ FunctionQueryBinding = "{""exemplarFormulaName"":""Transformar o Arquivo de Exemplo (2)""}" ]
-	lineageTag: 0c153df8-0ad5-44a8-a64c-1e69ffcc881f
-	queryGroup: 'Transformar Arquivo de headcount\Consultas Auxiliares'
+	mAttributes: [ FunctionQueryBinding = "{""exemplarFormulaName"":""Transformar o Arquivo de Exemplo""}" ]
+	lineageTag: 774c144c-09de-4678-b450-199859c0fc0f
+	queryGroup: 'Transformar Arquivo de headcount (2)\Consultas Auxiliares'
 
 	annotation PBI_ResultType = Function
 

@@ -1,0 +1,188 @@
+table base_de_dados
+	lineageTag: e2de1989-1999-4473-8191-08d772435827
+
+	column COD_EMPRESA
+		dataType: int64
+		formatString: 0
+		lineageTag: cf4fd569-ff47-489c-be39-adaaafd3f941
+		summarizeBy: sum
+		sourceColumn: COD_EMPRESA
+
+		annotation SummarizationSetBy = Automatic
+
+	column MATRICULA
+		dataType: int64
+		formatString: 0
+		lineageTag: 3c9ff3f0-d4bc-4623-84b7-a10c73dbb031
+		summarizeBy: sum
+		sourceColumn: MATRICULA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOME
+		dataType: string
+		lineageTag: 5a3ea798-b1f3-4568-82f6-1910e273faec
+		summarizeBy: none
+		sourceColumn: NOME
+
+		annotation SummarizationSetBy = Automatic
+
+	column STATUS_COLABORADOR
+		dataType: string
+		lineageTag: 2c9017a1-c00e-4b44-9709-db89da4992cf
+		summarizeBy: none
+		sourceColumn: STATUS_COLABORADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATA_ADMISSAO
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8528fc38-bf7c-417c-a84b-9e935619e2f1
+		summarizeBy: none
+		sourceColumn: DATA_ADMISSAO
+
+		variation Variation
+			isDefault
+			relationship: de0085b6-33f4-419e-b2b2-b8c6883dac31
+			defaultHierarchy: LocalDateTable_d21be7de-4960-461a-9da5-0abe28f875a7.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column NOME_GESTOR
+		dataType: string
+		lineageTag: 85e84c84-b237-48c6-b365-541aa551f0a7
+		summarizeBy: none
+		sourceColumn: NOME_GESTOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column PCD
+		dataType: string
+		lineageTag: ff659cf6-a21b-403b-9372-a85a92afb0de
+		summarizeBy: none
+		sourceColumn: PCD
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUNCAO
+		dataType: string
+		lineageTag: 4b963910-6e28-4ece-8c43-17b6d8fc7fd4
+		summarizeBy: none
+		sourceColumn: FUNCAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CC
+		dataType: int64
+		formatString: 0
+		lineageTag: 519d2673-d744-45eb-bef1-4c01e3776c25
+		summarizeBy: sum
+		sourceColumn: CC
+
+		annotation SummarizationSetBy = Automatic
+
+	column DESC1
+		dataType: string
+		lineageTag: 449a87a5-8b90-4525-a98d-37425b6174fc
+		summarizeBy: none
+		sourceColumn: DESC1
+
+		annotation SummarizationSetBy = Automatic
+
+	column DESC2
+		dataType: string
+		lineageTag: ca7abbf1-6f58-41c6-84da-83f82294b62a
+		summarizeBy: none
+		sourceColumn: DESC2
+
+		annotation SummarizationSetBy = Automatic
+
+	column DESC3
+		dataType: string
+		lineageTag: 2932f770-4bf2-4023-8c06-3cbc66f84d59
+		summarizeBy: none
+		sourceColumn: DESC3
+
+		annotation SummarizationSetBy = Automatic
+
+	column DESC4
+		dataType: string
+		lineageTag: b2807927-f722-413a-b4c7-7353a780cb49
+		summarizeBy: none
+		sourceColumn: DESC4
+
+		annotation SummarizationSetBy = Automatic
+
+	column EMPRESA
+		dataType: string
+		lineageTag: baa743dd-5e13-41ac-8e87-32b049854d3c
+		summarizeBy: none
+		sourceColumn: EMPRESA
+
+		annotation SummarizationSetBy = Automatic
+
+	column TURNO
+		dataType: string
+		lineageTag: bc387b05-f7f3-426b-99a0-26594db54c11
+		summarizeBy: none
+		sourceColumn: TURNO
+
+		annotation SummarizationSetBy = Automatic
+
+	column ENTRADA
+		dataType: string
+		lineageTag: bdfe7c45-b2d2-41be-87bd-9ae4a27cf7d3
+		summarizeBy: none
+		sourceColumn: ENTRADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column SAIDA
+		dataType: string
+		lineageTag: cb28342f-acf6-4390-aadd-d56e2debe77b
+		summarizeBy: none
+		sourceColumn: SAIDA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOME_COORDENADOR
+		dataType: string
+		lineageTag: 5e099acf-994e-435e-b10d-965c64537903
+		summarizeBy: none
+		sourceColumn: NOME_COORDENADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column POSICAO
+		dataType: string
+		lineageTag: e2d5dcc7-b8b0-43c6-ba1f-a8189f26d44b
+		summarizeBy: none
+		sourceColumn: POSICAO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition base_de_dados = m
+		mode: import
+		source =
+				let
+				    Fonte = SharePoint.Contents("https://viavarejo.sharepoint.com/sites/grupo_de_dados_wave", [ApiVersion = 15]),
+				    #"Data Lakehouse" = Fonte{[Name="Data Lakehouse"]}[Content],
+				    Compartilhados = #"Data Lakehouse"{[Name="Compartilhados"]}[Content],
+				    #"Headcount CD 1200" = Compartilhados{[Name="Headcount CD 1200"]}[Content],
+				    #"Arquivos Ocultos Filtrados1" = Table.SelectRows(#"Headcount CD 1200", each [Attributes]?[Hidden]? <> true),
+				    #"Invocar Função Personalizada1" = Table.AddColumn(#"Arquivos Ocultos Filtrados1", "Transformar Arquivo", each #"Transformar Arquivo"([Content])),
+				    #"Colunas Renomeadas1" = Table.RenameColumns(#"Invocar Função Personalizada1", {"Name", "Nome da Origem"}),
+				    #"Outras Colunas Removidas1" = Table.SelectColumns(#"Colunas Renomeadas1", {"Nome da Origem", "Transformar Arquivo"}),
+				    #"Coluna de Tabela Expandida1" = Table.ExpandTableColumn(#"Outras Colunas Removidas1", "Transformar Arquivo", Table.ColumnNames(#"Transformar Arquivo"(#"Arquivo de Amostra"))),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Coluna de Tabela Expandida1",{{"Nome da Origem", type text}, {"COD_EMPRESA", Int64.Type}, {"MATRICULA", Int64.Type}, {"NOME", type text}, {"STATUS_COLABORADOR", type text}, {"DATA_ADMISSAO", type date}, {"NOME_GESTOR", type text}, {"PCD", type text}, {"FUNCAO", type text}, {"CC", Int64.Type}, {"DESC1", type text}, {"DESC2", type text}, {"DESC3", type text}, {"DESC4", type text}, {"EMPRESA", type text}, {"TURNO", type text}, {"ENTRADA", type text}, {"SAIDA", type text}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"Nome da Origem"})
+				in
+				    #"Colunas Removidas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
