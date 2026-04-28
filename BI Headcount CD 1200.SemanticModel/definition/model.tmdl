@@ -14,7 +14,15 @@ queryGroup 'Transformar Arquivo de headcount (2)\Consultas Auxiliares'
 
 	annotation PBI_QueryGroupOrder = 0
 
-annotation PBI_QueryOrder = ["Medidas","base_de_dados","Parâmetro1","Transformar o Arquivo de Exemplo","Arquivo de Amostra","Transformar Arquivo"]
+queryGroup 'Transformar Arquivo de Consulta1'
+
+	annotation PBI_QueryGroupOrder = 2
+
+queryGroup 'Transformar Arquivo de Consulta1\Consultas Auxiliares'
+
+	annotation PBI_QueryGroupOrder = 0
+
+annotation PBI_QueryOrder = ["Medidas","base_de_dados","Parâmetro1","Transformar o Arquivo de Exemplo","Arquivo de Amostra","Transformar Arquivo","Parâmetro2","Transformar o Arquivo de Exemplo (2)","Arquivo de Amostra (2)","Transformar Arquivo (2)"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 

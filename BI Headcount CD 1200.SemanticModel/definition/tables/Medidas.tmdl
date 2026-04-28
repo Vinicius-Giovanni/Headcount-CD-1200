@@ -24,6 +24,263 @@ table Medidas
 			```
 		lineageTag: 466a4662-7e3d-403d-80f5-4fad6404b902
 
+	measure nome_medida =
+			
+			"
+			<!DOCTYPE html>
+			<html lang=""pt-BR"">
+			<head>
+			<meta charset=""UTF-8"">
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+			<title>Headcount CD 1200 – Grupo Casas Bahia</title>
+			
+			<style>
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap');
+			
+			*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+			
+			html, body {
+			  width: 100%;
+			  height: 100%;
+			  overflow: hidden;
+			  font-family: 'Montserrat', sans-serif;
+			  background: #020d21;
+			}
+			
+			.scene {
+			  position: relative;
+			  width: 100vw;
+			  height: 100vh;
+			  background: radial-gradient(ellipse 70% 80% at 50% 50%, #0a2a5e 0%, #061535 40%, #020d21 75%);
+			  display: flex;
+			  align-items: center;
+			  justify-content: center;
+			  overflow: hidden;
+			}
+			
+			/* canvas estrelas */
+			#starCanvas {
+			  position: absolute;
+			  inset: 0;
+			  width: 100%;
+			  height: 100%;
+			  pointer-events: none;
+			  z-index: 0;
+			}
+			
+			/* efeitos */
+			.glow-tl {
+			  position: absolute;
+			  top: -120px; left: -80px;
+			  width: 600px; height: 400px;
+			  background: radial-gradient(ellipse, rgba(10,60,160,0.35) 0%, transparent 70%);
+			  transform: rotate(-30deg);
+			  z-index: 1;
+			}
+			
+			.glow-br {
+			  position: absolute;
+			  bottom: -120px; right: -80px;
+			  width: 600px; height: 400px;
+			  background: radial-gradient(ellipse, rgba(10,60,160,0.30) 0%, transparent 70%);
+			  transform: rotate(-30deg);
+			  z-index: 1;
+			}
+			
+			.streak-tl {
+			  position: absolute;
+			  width: 100%; height: 100%;
+			  background: linear-gradient(135deg,
+			    rgba(30,90,210,0.18) 0%,
+			    transparent 35%,
+			    transparent 65%,
+			    rgba(30,90,210,0.12) 100%);
+			  z-index: 1;
+			}
+			
+			/* círculos DOBRADOS */
+			.circles {
+			  position: absolute;
+			  top: 50%; left: 50%;
+			  transform: translate(-50%, -50%);
+			  z-index: 2;
+			}
+			
+			.circle {
+			  position: absolute;
+			  top: 50%; left: 50%;
+			  border-radius: 50%;
+			}
+			
+			.c1 {
+			  width: 1160px;
+			  height: 1160px;
+			  border: 1px solid rgba(238,240,253,0.29);
+			  transform: translate(-50%, -50%);
+			  animation: spin1 18s linear infinite;
+			}
+			
+			.c2 {
+			  width: 1500px;
+			  height: 1500px;
+			  border: 1px solid rgba(238,240,253,0.60);
+			  transform: translate(-50%, -50%);
+			  animation: spin1 30s linear infinite;
+			}
+			
+			.c3 {
+			  width: 1880px;
+			  height: 1880px;
+			  border: 1px solid rgba(238,240,253,0.39);
+			  transform: translate(-50%, -50%);
+			  animation: spin1 50s linear infinite;
+			}
+			
+			@keyframes spin1 {
+			  from { transform: translate(-50%, -50%) rotate(0deg); }
+			  to   { transform: translate(-50%, -50%) rotate(360deg); }
+			}
+			
+			/* card */
+			.card {
+			  position: relative;
+			  z-index: 10;
+			  display: flex;
+			  flex-direction: column;
+			  align-items: center;
+			  text-align: center;
+			  animation: fadeUp .9s ease both;
+			}
+			
+			@keyframes fadeUp {
+			  from { opacity:0; transform:translateY(24px); }
+			  to   { opacity:1; transform:translateY(0); }
+			}
+			
+			/* logo */
+			.logo-img {
+			  width: 220px;
+			  margin-bottom: 28px;
+			}
+			
+			/* TEXTOS DOBRADOS */
+			.title-head {
+			  line-height: 1.3;
+			  letter-spacing: 10px;
+			  font-size: 100px;
+			  font-weight: 300;
+			  color: #fff;
+			}
+			
+			.title-code {
+			  line-height: 1.05;
+			  font-size: 200px;
+			  font-weight: 650;
+			  color: #fff;
+			  margin-bottom: 2px;
+			}
+			
+			.divider {
+			  width: 800px;
+			  height: 3px;
+			  background: linear-gradient(to right, #1a55cc, #cc2020);
+			  margin-bottom: 20px;
+			}
+			
+			.subtitle {
+			  font-size: 27px;
+			  color: rgba(190,210,255,0.75);
+			  letter-spacing: 5px;
+			  text-transform: uppercase;
+			}
+			
+			</style>
+			</head>
+			
+			<body>
+			<div class=""scene"">
+			
+			<canvas id=""starCanvas""></canvas>
+			
+			<div class=""glow-tl""></div>
+			<div class=""glow-br""></div>
+			<div class=""streak-tl""></div>
+			
+			<div class=""circles"">
+			  <div class=""circle c1""></div>
+			  <div class=""circle c2""></div>
+			  <div class=""circle c3""></div>
+			</div>
+			
+			<div class=""card"">
+			
+			  <div class=""title-head"">HEADCOUNT</div>
+			  <div class=""title-code"">CD 1200</div>
+			
+			  <div class=""divider""></div>
+			  <div class=""subtitle""> <p style=""font-size: 40px"">Organograma</p></div>
+			</div>
+			
+			</div>
+			
+			<script>
+			var c = document.getElementById('starCanvas');
+			var x = c.getContext('2d');
+			var w, h, st = [];
+			
+			function ri() {
+			  w = c.width = window.innerWidth;
+			  h = c.height = window.innerHeight;
+			  st = Array.from({ length: 200 }, () => ({
+			    x: Math.random() * w,
+			    y: Math.random() * h,
+			    r: Math.random() * 3 + 1,
+			    a: Math.random(),
+			    sp: Math.random() * 0.05 + 0.01,
+			    tw: Math.random() * Math.PI * 2
+			  }));
+			}
+			
+			function dr() {
+			  x.clearRect(0, 0, w, h);
+			  st.forEach(s => {
+			    s.tw += 0.02;
+			    s.a = 0.4 + Math.sin(s.tw) * 0.05;
+			    x.beginPath();
+			    x.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+			    x.fillStyle = `rgba(200,220,255,${s.a})`;
+			    x.fill();
+			    s.y -= s.sp;
+			    if (s.y < 0) { s.y = h; s.x = Math.random() * w; }
+			  });
+			  requestAnimationFrame(dr);
+			}
+			
+			ri();
+			dr();
+			window.addEventListener('resize', ri);
+			</script>
+			
+			</body>
+			</html>
+			
+			"
+		lineageTag: 53eb187a-efdc-4880-bc2b-e6f1dae550f9
+
+	measure organograma = "Estrutura da Equipe ➤"
+		lineageTag: 8f7f5ae6-af70-4390-80bb-3afe986664b6
+
+	measure rp = ```
+			"RP's Abertas ➤" 
+			```
+		lineageTag: 48ec10fd-2a71-45db-9c9c-e3e2a40049c8
+
+	measure fretamento = "Fretamento ➤"
+		lineageTag: 6e2401d0-7e51-46d9-a19b-586138fe098d
+
+	measure dev = "Desenvolvido por Thainá Souza & Vinícius Giovanni"
+		lineageTag: 49217704-a30a-41e2-a98b-cd0ffcd07d5b
+
 	column 'Coluna 1'
 		dataType: string
 		isHidden
@@ -44,7 +301,7 @@ table Medidas
 				in
 				    #"Tipo Alterado"
 
-	annotation PBI_ResultType = Table
+	annotation PBI_ResultType = Exception
 
 	annotation PBI_NavigationStepName = Navegação
 

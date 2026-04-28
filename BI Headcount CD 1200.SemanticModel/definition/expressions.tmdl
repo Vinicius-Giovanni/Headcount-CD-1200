@@ -46,3 +46,49 @@ expression 'Transformar Arquivo' =
 
 	annotation PBI_ResultType = Function
 
+expression Parâmetro2 = #"Arquivo de Amostra (2)" meta [IsParameterQuery=true, BinaryIdentifier=#"Arquivo de Amostra (2)", Type="Binary", IsParameterQueryRequired=true]
+	lineageTag: 74b06f00-fa8f-4e65-a068-194ace7cac12
+	queryGroup: 'Transformar Arquivo de Consulta1\Consultas Auxiliares'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transformar o Arquivo de Exemplo (2)' =
+		let
+		    Fonte = Excel.Workbook(Parâmetro2, null, true),
+		    Tabela1_Table = Fonte{[Item="Tabela1",Kind="Table"]}[Data]
+		in
+		    Tabela1_Table
+	lineageTag: 2ad6e40b-2b83-471e-a460-0750ab880aae
+	queryGroup: 'Transformar Arquivo de Consulta1'
+
+	annotation PBI_ResultType = Table
+
+expression 'Arquivo de Amostra (2)' =
+		let
+		    Fonte = SharePoint.Contents("https://viavarejo.sharepoint.com/sites/grupo_de_dados_wave", [ApiVersion = 15]),
+		    #"Data Lakehouse" = Fonte{[Name="Data Lakehouse"]}[Content],
+		    Compartilhados = #"Data Lakehouse"{[Name="Compartilhados"]}[Content],
+		    #"Headcount CD 1200" = Compartilhados{[Name="Headcount CD 1200"]}[Content],
+		    Navegação1 = #"Headcount CD 1200"{0}[Content]
+		in
+		    Navegação1
+	lineageTag: 58695d16-66ed-4499-8af5-dcef24220d40
+	queryGroup: 'Transformar Arquivo de Consulta1\Consultas Auxiliares'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transformar Arquivo (2)' =
+		let
+		    Fonte = (Parâmetro2) => let
+		        Fonte = Excel.Workbook(Parâmetro2, null, true),
+		        Tabela1_Table = Fonte{[Item="Tabela1",Kind="Table"]}[Data]
+		    in
+		        Tabela1_Table
+		in
+		    Fonte
+	mAttributes: [ FunctionQueryBinding = "{""exemplarFormulaName"":""Transformar o Arquivo de Exemplo (2)""}" ]
+	lineageTag: 0b080ced-7452-4230-8363-de2850258bae
+	queryGroup: 'Transformar Arquivo de Consulta1\Consultas Auxiliares'
+
+	annotation PBI_ResultType = Function
+
