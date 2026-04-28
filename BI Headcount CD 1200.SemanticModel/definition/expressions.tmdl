@@ -79,11 +79,11 @@ expression 'Arquivo de Amostra (2)' =
 
 expression 'Transformar Arquivo (2)' =
 		let
-		    Fonte = (Parâmetro2) => let
-		        Fonte = Excel.Workbook(Parâmetro2, null, true),
-		        Tabela1_Table = Fonte{[Item="Tabela1",Kind="Table"]}[Data]
-		    in
-		        Tabela1_Table
+		    Fonte = (Parâmetro2 as binary) => let
+		    Fonte = Excel.Workbook(Parâmetro2, null, true),
+		    Tabela1_Table = Fonte{[Item="Tabela1",Kind="Table"]}[Data]
+		in
+		    Tabela1_Table
 		in
 		    Fonte
 	mAttributes: [ FunctionQueryBinding = "{""exemplarFormulaName"":""Transformar o Arquivo de Exemplo (2)""}" ]
